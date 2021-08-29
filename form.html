@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/grid.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/form.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+    <div id="main-container flex-column j-between a-center">
+        <header>
+            <h2>Please select the following options to start.</h2>
+        </header>
+
+        <form action="" id="trivia-form" class="flex-column a-center j-between m-auto">
+
+            <label for="number-questions">Number of Questions:</label>
+            <input type="number" min="1" max="10" id="amount" value="1">
+
+            <label for="category">Select Category:</label>
+            <select name="category" id="category">
+                <option value="0">Any Category</option>
+                <option value="9">General Knowledge</option>
+                <option value="10">Books</option>
+                <option value="11">Film</option>
+                <option value="12">Music</option>
+                <option value="13">Music & Theatres</option>
+                <option value="14">Television</option>
+                <option value="15">Video Games</option>
+                <option value="16">Board Games</option>
+                <option value="17">Science & Nature</option>
+                <option value="18">Computers</option>
+                <option value="19">Mathematics</option>
+                <option value="20">Mythology</option>
+                <option value="21">Sports</option>
+                <option value="22">Geography</option>
+                <option value="23">History</option>
+                <option value="24">Politics</option>
+                <option value="25">Art</option>
+                <option value="26">Celebrities</option>
+                <option value="27">Animals</option>
+                <option value="28">Vehicles</option>
+                <option value="29">Comics</option>
+                <option value="30">Gadgets</option>
+                <option value="31">Japanese Anime & Manga</option>
+                <option value="32">Cartoon & Animations</option>
+            </select>
+
+            <label for="difficulty">Select Difficulty:</label>
+            <select name="difficulty" id="difficulty">
+                <option value="0">Any Difficulty</option>
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+
+            <label for="type">Select Type: </label>
+            <select name="type" id="type">
+                <option value="0">Any Type</option>
+                <option value="multiple">Multiple Choice</option>
+                <option value="boolean">True / False</option>
+            </select>
+            <input type="submit" id="submit">
+
+        </form>
+   
+</div>
+</div>
+
+<script src="assets/js/form.js"></script>
+</body>
+</html>

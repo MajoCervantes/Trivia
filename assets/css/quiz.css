@@ -1,0 +1,28 @@
+h1 {
+   margin-bottom: 100px; 
+   font-size: 4rem;
+}
+
+.btn {
+    margin-right: 40px;
+}
+
+.btn-container {
+    width: 100%;
+    justify-content: space-around;
+    padding: 25px;
+
+    animation: borders 3s linear infinite;
+}
+
+@keyframes borders {
+    0%   {border: none}
+    25%  { border-right: 2px solid #64C9CF;}
+    50%  { border-bottom: 2px solid #64C9CF;}
+    75%  { border-left: 2px solid #64C9CF;}
+    100% { border-top: 2px solid #64C9CF;}
+  }
+
+
+
+
