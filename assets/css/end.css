@@ -26,6 +26,9 @@ img {
 }
 input {
     border: none;
+}
+
+input:hover {
     box-shadow: 0 0.1rem 1.4rem 0 rgba(100, 201, 207, 0.5);
 }
 

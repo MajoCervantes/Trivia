@@ -1,3 +1,12 @@
+#game {
+    box-shadow: 0 0.2rem 1rem 0 rgba(100, 201, 207, 0.5);
+    padding: 10px;
+}
+
+#question {
+    margin-bottom: 15px;
+}
+
 .choice-container {
     margin-bottom: 20px;
     width: 100%;
@@ -9,14 +18,12 @@
 .choice-container:hover {
     cursor: pointer;
     box-shadow: 0 0.2rem 1rem 0 rgba(100, 201, 207, 0.5);
-    transform: translateY(-0.1rem);
-    transition: transform 150ms;
 }
 
 .choice-text {
     padding: .5rem;
     width: 100%;
-color: #64C9CF;
+    color: #64C9CF;
 }
 
 .correct {
@@ -32,9 +39,11 @@ color: #64C9CF;
 /* HUD */
 
 #hud {
-    margin: 60px 0 30px 0;
+    margin: 60px 0 50px 0;
     display: flex;
     justify-content: space-around;
+
+    
 }
 
 .hud-prefix {

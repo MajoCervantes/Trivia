@@ -44,8 +44,8 @@ fetch(url)
 .catch(err => console.log(error));
 
 
-const CORRECT_BONUS = 1;
-const MAX_QUESTIONS = allValues.amount;
+const correctBonus = 1;
+const maxQuestions = allValues.amount;
 
 startGame = () => {
     questionCounter = 0;
@@ -62,14 +62,14 @@ startGame = () => {
 
 
 getNewQuestion = () => {
-    if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
+    if (availableQuestions.length === 0 || questionCounter > maxQuestions) {
         localStorage.setItem("mostRecentScore", score);
         return window.location.assign("end.html")
     }
     questionCounter++;
-    progressText.innerText = `Question${questionCounter}/${MAX_QUESTIONS}`;
-    // console.log((questionCounter / MAX_QUESTIONS) * 100);
-    progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`
+    progressText.innerText = `Question${questionCounter}/${maxQuestions}`;
+    // console.log((questionCounter / maxQuestions) * 100);
+    progressBarFull.style.width = `${(questionCounter / maxQuestions) * 100}%`
 
 
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
@@ -109,7 +109,7 @@ choices.forEach(choice => {
             : "incorrect";
 
             if (clasToAply === "correct") {
-                incrementScore(CORRECT_BONUS);
+                incrementScore(correctBonus);
             }
 
             selectedChoice.parentElement.classList.add(clasToAply);
