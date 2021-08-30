@@ -4,7 +4,9 @@ const progressText = document.getElementById("progressText");
 const scoreText = document.getElementById("score");
 const progressBarFull = document.getElementById("progressBarFull");
 const loader = document.getElementById("loader");
-const game = document.getElementById("game")
+const game = document.getElementById("game");
+const choiceContainer1 = document.getElementById("choice-container1");
+const choiceContainer2 = document.getElementById("choice-container2");
 
 let currentQuestion = {};
 let acceptingAnswers = false;
@@ -13,7 +15,7 @@ let questionCounter = 0;
 let availableQuestions = [];
 
 const allValues = JSON.parse(localStorage.getItem("values")) || [];
-// console.log(allValues);
+console.log(allValues);
 
 const url = `https://opentdb.com/api.php?amount=${allValues.amount}&category=${allValues.category}&difficulty=${allValues.difficulty}&type=${allValues.type}`
 
@@ -24,6 +26,7 @@ fetch(url)
 .then(response => {
     console.log(response.results);
     questions = response.results.map(loadedQuestion =>{
+        loadedQuestion.question
         const formattedQuestion = {
             question: loadedQuestion.question
         };
@@ -41,8 +44,8 @@ fetch(url)
 .catch(err => console.log(error));
 
 
-const CORRECT_BONUS = 0;
-const MAX_QUESTIONS = 3;
+const CORRECT_BONUS = 1;
+const MAX_QUESTIONS = allValues.amount;
 
 startGame = () => {
     questionCounter = 0;
@@ -76,6 +79,16 @@ getNewQuestion = () => {
     choices.forEach(choice => {
         const number = choice.dataset["number"];
         choice.innerText = currentQuestion["choice" + number];
+        if(choice.innerText == "undefined") {
+            choiceContainer1.classList.add("hidden");
+        }else{
+            choiceContainer1.classList.remove("hidden");
+        }
+        if(choice.innerText == "undefined") {
+            choiceContainer2.classList.add("hidden");
+        }else{
+            choiceContainer2.classList.remove("hidden");
+        }
     });
 
     availableQuestions.splice(questionIndex, 1);

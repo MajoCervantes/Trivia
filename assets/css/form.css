@@ -1,58 +1,52 @@
-/* header h2 {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.main-container input {
-    margin-bottom: 20px;
-}
-
-#category {
-    margin-bottom: 20px;
-} */
-
 #main-container {
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(#7FC8A9, #D5EEBB, #5F7A61);
-    background-size: cover;
-    background-repeat: no-repeat;
     position: relative;
+    border: 1px solid #64C9CF;
+    box-shadow: 0 0.1rem 1.4rem 0 rgba(100, 201, 207, 0.5);
 }
 
-header {
-    margin-top: 0px;
-}
 
 h2 {
-    color: #444941;
     text-align: center;
     padding: 60px 25px;
-    font-family: Josefin Sans;
-    text-shadow: 2px 2px 2px #FFF;
+    font-size: 2.5rem;
 }
 
-/* #trivia-form {
-    width: 50%;
-    border: solid 1px;
-    box-shadow: 5px 5px 2px 2px #444941;
-    padding: 30px
-} */
 
 #trivia-form label {
-    color: #444941;
-    font-family: Josefin Sans;
     font-weight: 600;
     font-size: 1.2rem;
-    
+    color: #64C9CF;
 }
 
 #trivia-form input, select {
     margin-bottom: 25px;
     padding: 10px;
+    border: none;
 }
 
+
 #trivia-form select, input, option {
-    color: #5F7A61;
-    font-size: .9rem;
+    font-size: 1rem;
 }
+
+#submit {
+    font-size: 1.2rem;
+    text-align: center;
+    border: 1px solid #64C9CF;
+    color: #64C9CF;
+    background-color: #fff;
+    }
+
+#submit:hover {
+    cursor: pointer;
+    box-shadow: 0 0.2rem 1rem 0 rgba(100, 201, 207, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+
+select, input {
+    width: 70%;
+}
+

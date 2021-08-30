@@ -1,0 +1,31 @@
+#finalScore {
+    font-size: 5rem;
+}
+
+input {
+    margin-bottom: 25px;
+    padding: 20px 30px;
+    font-size: 1.5rem;
+    width: 40%;
+    text-align: center;
+}
+
+input::placeholder{
+    color: #64C9CF;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.btn-container{
+    width: 50%;
+}
+
+img {
+    margin:auto;
+    width: 30%;
+}
+input {
+    border: none;
+    box-shadow: 0 0.1rem 1.4rem 0 rgba(100, 201, 207, 0.5);
+}
+

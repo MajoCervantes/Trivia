@@ -2,19 +2,25 @@
 
 :root {
    background-color: #E8FFFF;
-   font-family: 'Poppins', sans-serif;
-}
+   font-family: Josefin Sans;
 
+   
+}
 
 *, html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: Josefin Sans;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, label, p {
     color: #41AEA9;
+}
+
+select, input {
+    color: #64C9CF;
+    outline: none;
 }
 
 ul {
@@ -35,6 +41,7 @@ ul {
     align-items: center;
 }
 
+
 .btn {
     font-size: 1.5rem;
     padding: 10px 0;
@@ -44,7 +51,7 @@ ul {
     margin-bottom: 12px;
     color: #64C9CF;
     background-color: #fff;
-}
+    }
 
 .btn:hover {
     cursor: pointer;
@@ -66,13 +73,9 @@ form{
     align-items: center;
 }
 
-input {
-    border: none;
-    box-shadow: 0 0.1rem 1.4rem 0 rgba(100, 201, 207, 0.5);
-}
 
 input::placeholder {
-    color: #aaa;
+    color: #64C9CF;
 }
 
 .hidden {
@@ -83,3 +86,4 @@ input::placeholder {
 .container > * {
     width: 100%;
 }
+
