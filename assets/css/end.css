@@ -37,22 +37,3 @@ input:hover {
     box-shadow: 0 0.1rem 1.4rem 0 rgba(100, 201, 207, 0.5);
 }
 
-.end-word{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    margin: auto;
-    opacity: 0;
-    text-align: center;
-    margin-top: 250px;
-    animation: showUp 2s ease-in-out;
-} 
-
-@keyframes showUp {
-    0% {opacity: 1; font-size: .5rem;}
-    50%{opacity: 1; font-size: 20rem}
-    100% {opacity: 1; font-size: .5rem;}
-}
-
